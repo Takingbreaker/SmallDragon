@@ -15,13 +15,18 @@
             border-spacing: 0px;
             background-color: lightgrey;
         }
-        tr{
-            border: solid black 1px;
+        *[title]{
+            font-size: xx-large;
+            font-family: "Microsoft Himalaya";
+            color: red;
         }
+        <!-- 属性选择器 -->
+        <!-- 标签选择器 -->
         #p1{
             width: 400;
             height: 800;
         }
+        <!-- ID选择器 -->
         .td1{
             width: 400px;
             height: 180px;
@@ -29,12 +34,21 @@
         .td2{
             width: 200px;
         }
-        [title="代表专辑"]{
-            font-family: 楷体;
-            font-size: 60px;
-            color: black;
-            }
+        <!-- 类选择器 -->
+        <!-- 属性选择器失效位置 -->
+        td+td{
+
+        }
+        body>table{
+
+        }
+        <!-- 组合选择器 -->
+        a:hover{
+            color: red;
+        }
+        <!-- 伪类选择器 -->
     </style>
+    <link rel="stylesheet" href="..\css\css1.css" type="text/css">
 </head>
 <body>
 <table>
@@ -46,7 +60,7 @@
             2017年3月6日，推出第2张个人音乐专辑《一如年少模样》；同年，获得首届唱工委CMA音乐颁奖盛典年度最佳新人奖.2018年，推出第3张个人原创专辑《与荒野》。</td>
     </tr>
     <tr>
-        <td title="代表专辑">
+        <td title="Representative album">
             代表专辑
         </td>
         <td>
